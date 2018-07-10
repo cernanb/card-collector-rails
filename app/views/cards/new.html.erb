@@ -1,0 +1,9 @@
+<h1>Create a new card</h1>
+
+<%= form_for @card do |f| %>
+  <%= f.text_field :player_name %>
+  <%= f.label :player_name %>
+  <%= f.text_field :player_team %>
+  <%= f.label :player_team %>
+  <%= f.submit %>
+<% end %>
