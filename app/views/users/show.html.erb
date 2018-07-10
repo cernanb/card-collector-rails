@@ -1,0 +1,14 @@
+<h1><%= @user.name %>'s Collection</h1>
+
+<% @user.user_cards.each do |uc| %>
+  <%= uc.card.player_name  %> - 
+  <%= uc.card.player_team  %> -
+  <%= uc.date_acquired  %> -  
+  <%= uc.condition  %>
+<% end %>
+
+
+<h3>Add a card to your collection</h3>
+<%= form_tag %>
+  
+<% end %>
