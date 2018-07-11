@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   resources :cards
   resources :users
+
+  resources :user_cards, only: [:create]
 end

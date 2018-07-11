@@ -25,7 +25,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    
+    @uc = UserCard.new
   end
 
   private
