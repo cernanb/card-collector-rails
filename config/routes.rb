@@ -8,5 +8,9 @@ Rails.application.routes.draw do
 
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
+
+  get '/auth/facebook/callback', to: 'sessions#create'
   root "application#home"
+
+
 end
