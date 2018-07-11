@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :users
 
   resources :user_cards, only: [:create]
+
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
 end
